@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{background-color: goldenrod}
+
+#boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box{
+    width: 28%;
+    background-color:maroon;
+    border: 2px white;
+    margin: 40px 0px;
+    border-radius: 20px;
+    box-shadow:5px 7px 10px gray;
+
+}
+
+.box .pic img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.box .text{
+    padding: 10px 15px;
+    color: white;
+}
+
+.box .text button{
+    background-color:black;
+    border: 0;
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.box .text h1{
+    margin-bottom: 10px;
+    color:white;
+    text-shadow: 3px 3px black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.box .comments{
+    margin: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.box .comments .profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 70%;
+    margin-right: 10px;
+  
+}   
+
+.box .comments .name p:nth-child(1){
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: 800;
+   font-size: small;
+   color: bisque;
+}
+
+.box .comments .name p:nth-child(2){
+    font-size: smaller;
+    color: bisque;
+}
+
+@media screen and (max-width: 480px) {
+
+    #boxes{
+        flex-direction: column;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+  }
